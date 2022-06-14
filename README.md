@@ -1,5 +1,14 @@
 # Django \#23689 repro
 
+How to see the reproduction:
+
+```shell
+py -3.10 -m venv venv
+. venv/Scripts/activate
+python -m pip install -r requirements.txt
+python manage.py test
+```
+
 How this repo was created:
 
 ```shell
@@ -16,3 +25,4 @@ Then:
 * Added `views.py` and `tests.py` 
 * Updated `urls.py` to have the new path
 * Updated `settings.py` to add locale middleware and pt languages
+
